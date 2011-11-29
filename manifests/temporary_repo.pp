@@ -1,4 +1,4 @@
-define repoview::temporary_repo ( $output='.' ) {
+define repoview::temporary_repo ( $output='repoview' ) {
 
   if $name == "main" {
     $path = $basepath

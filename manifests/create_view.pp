@@ -1,4 +1,4 @@
-define repoview::create_view ( $output='.' ) {
+define repoview::create_view ( $output='repoview' ) {
 
   if $name == "main" {
     $path = $basepath
