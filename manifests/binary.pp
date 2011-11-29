@@ -7,7 +7,7 @@ class repoview::binary {
 
   file { '/usr/local/bin/repoview':
     ensure  => present,
-    source  => 'puppet:///repoview/repoview.py',
+    source  => 'puppet:///modules/repoview/repoview.py',
     owner   => 'root',
     group   => 'root',
     mode    => '755',
