@@ -32,8 +32,8 @@ define repoview::create_view ( $output='.' ) {
 
   exec { "repoview ${path}":
     command  => "repoview --template-dir='${templates}' --title='${repotitle}' --output-dir='${output}' ${path}",
-    path     => '/usr/bin',
-    cwd      => "/usr/share/repoview",
+    path     => '/usr/local/bin',
+    cwd      => "/usr/local/share/repoview",
     require => [ Class['repoview::templates'], Class['repoview::binary'] ],
   }
 

@@ -1,4 +1,4 @@
-class repoview::templates ( $path='/usr/share/repoview' ) {
+class repoview::templates ( $path='/usr/local/share/repoview' ) {
 
   file { $path:
     ensure => directory,

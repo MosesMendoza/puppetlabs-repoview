@@ -65,7 +65,7 @@ class repoview (
   include repoview::binary
 
   class { 'repoview::templates':
-    path => '/usr/share/repoview',
+    path => '/usr/local/share/repoview',
   }
 
   repoview::temporary_repo { $temporaryrepos: }

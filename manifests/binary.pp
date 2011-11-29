@@ -5,7 +5,7 @@ class repoview::binary {
 
   include repoview::binary::dependencies
 
-  file { '/usr/bin/repoview':
+  file { '/usr/local/bin/repoview':
     ensure  => present,
     source  => 'puppet:///repoview/repoview.py',
     owner   => 'root',

@@ -1,5 +1,5 @@
 name    'puppetlabs-repoview'
-version '0.1.1'
+version '0.1.2'
 source 'https://github.com/jgrocho/puppetlabs-repoview'
 author 'Jonathan Grochowski'
 license 'Apache Version 2.0'
