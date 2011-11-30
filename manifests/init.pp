@@ -48,7 +48,7 @@ class repoview (
         $basepath='/var/www/yum', 
         $basetitle='Puppet Labs Yum Repository',
         $basetemplates='templates',
-        $temporaryrepos=[ 'main', 'el/5', 'el/6',
+        $temporaryrepos=[ 'el/5', 'el/6',
             'fedora/f14', 'fedora/f15', 'fedora/f16', ],
         $otherrepos=[ 'el/5/products/i386',   'el/5/dependencies/i386',
             'el/5/products/x86_64', 'el/5/dependencies/x86_64',
@@ -66,6 +66,10 @@ class repoview (
 
   class { 'repoview::templates':
     path => '/usr/local/share/repoview',
+  }
+
+  repoview::temporary_repo { 'main':
+    output => '.',
   }
 
   repoview::temporary_repo { $temporaryrepos: }
