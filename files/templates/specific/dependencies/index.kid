@@ -71,7 +71,7 @@ PLATFORM_ARCH=get_platform_arch(repo_data['title'])
 
         <p> This repository contains the more specialized dependencies that
           Puppet's products require. The Puppet Labs <a
-            href="../../products/${PLATFORM_ARCH}/">Products repository</a>
+            href="../../../products/${PLATFORM_ARCH}/repoview">Products repository</a>
           contains the packages released by Puppet Labs.  </p>
 
         <p> The Puppet Labs repositories can be added by running

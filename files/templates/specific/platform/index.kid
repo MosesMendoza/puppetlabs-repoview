@@ -76,14 +76,14 @@ PLATFORM_VERSION=get_platform_version(repo_data['title'])
         <section id="platforms">
           <h2>Products</h2>
           <ul class="platform-list">
-            <li><a href="products/i386">i386</a></li>
-            <li><a href="products/x86_64">x86_64</a></li>
+            <li><a href="../products/i386/repoview">i386</a></li>
+            <li><a href="../products/x86_64/repoview">x86_64</a></li>
           </ul>
 
           <h2>Dependicies</h2>
           <ul class="platform-list">
-            <li><a href="dependencies/i386">i386</a></li>
-            <li><a href="dependencies/x86_64">x86_64</a></li>
+            <li><a href="../dependencies/i386/repoview">i386</a></li>
+            <li><a href="../dependencies/x86_64/repoview">x86_64</a></li>
           </ul>
         </section>
 

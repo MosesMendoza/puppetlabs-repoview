@@ -53,15 +53,15 @@ def html_time(stamp):
 
           <h3>Enterprise Linux &ndash; RedHat, CentOS, Scientific</h3>
           <ul class="platform-list">
-            <li><a href="/el/6">EL 6</a></li>
-            <li><a href="/el/5">EL 5</a></li>
+            <li><a href="/el/6/repoview">EL 6</a></li>
+            <li><a href="/el/5/repoview">EL 5</a></li>
           </ul>
 
           <h3>Fedora</h3>
           <ul class="platform-list">
-            <li><a href="/fedora/f16">16</a></li>
-            <li><a href="/fedora/f15">15</a></li>
-            <li><a href="/fedora/f14">14</a></li>
+            <li><a href="/fedora/f16/repoview">16</a></li>
+            <li><a href="/fedora/f15/repoview">15</a></li>
+            <li><a href="/fedora/f14/repoview">14</a></li>
           </ul>
         </section>
 
