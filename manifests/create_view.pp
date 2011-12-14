@@ -30,6 +30,12 @@ define repoview::create_view ( $output='repoview' ) {
     }
   }
 
+  exec { "createrepo -d ${path}":
+    path    => '/usr/bin',
+    require => Package['createrepo'],
+    before  => Exec["repoview ${path}"],
+  }
+
   exec { "repoview ${path}":
     command  => "repoview --template-dir='${templates}' --title='${repotitle}' --output-dir='${output}' ${path}",
     path     => '/usr/local/bin',
