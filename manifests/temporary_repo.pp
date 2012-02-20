@@ -17,11 +17,6 @@ define repoview::temporary_repo ( $output='repoview' ) {
     $path = "${basepath}/${name}"
   }
 
-  exec { "createrepo -d ${path}":
-    path    => '/usr/bin',
-    require => Package['createrepo'],
-  }
-
   repoview::create_view { "${name}":
     output => $output,
   }
@@ -33,6 +28,6 @@ define repoview::temporary_repo ( $output='repoview' ) {
   }
 
   # Create the repodata, generate the HTML pages, and then delete the repodata folder.
-  Exec["createrepo -d ${path}"] -> Repoview::Create_view[$name] ~> File["${path}/repodata"]
+ Repoview::Create_view[$name] ~> File["${path}/repodata"]
 
 }
